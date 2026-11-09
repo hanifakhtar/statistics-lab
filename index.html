@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Statistics Learning Lab — laboratorium simulasi statistik interaktif oleh Hanif Akhtar.">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>Statistics Learning Lab | Hanif Akhtar</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Statistics Learning Lab: beranda"><span class="brand-mark">Σ</span><span><strong>Statistics <em>Learning Lab</em></strong><small>Learn statistics by experimenting</small></span></a>
+    <div class="top-actions"><span class="status"><span class="status-dot"></span> Browser-based · No server</span><button type="button" id="themeToggle" class="icon-btn" aria-label="Ubah tema">☾ <span>Dark</span></button></div>
+  </header>
+  <div class="app-shell">
+    <nav id="sidebar" class="sidebar" aria-label="Navigasi modul">
+      <div class="sidebar-label">WORKSPACE</div>
+      <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span> Overview</button>
+      <div class="sidebar-label spacer-label">FOUNDATIONS</div>
+      <button class="nav-item" data-page="sampling"><span class="nav-icon">≈</span> Sampling Distribution</button>
+      <button class="nav-item" data-page="ci"><span class="nav-icon">↔</span> Confidence Interval</button>
+      <button class="nav-item" data-page="pvalue"><span class="nav-icon">p</span> p-value Simulator</button>
+      <button class="nav-item" data-page="power"><span class="nav-icon">⚡</span> Statistical Power</button>
+      <div class="sidebar-label spacer-label">RELATIONSHIPS</div>
+      <button class="nav-item" data-page="correlation"><span class="nav-icon">r</span> Correlation Explorer</button>
+      <button class="nav-item" data-page="regression"><span class="nav-icon">ŷ</span> Regression Playground</button>
+      <div class="sidebar-label spacer-label">GROUP COMPARISONS</div>
+      <button class="nav-item" data-page="ttest"><span class="nav-icon">t</span> t-test</button>
+      <button class="nav-item" data-page="anova"><span class="nav-icon">F</span> ANOVA</button>
+      <div class="sidebar-label spacer-label">RESOURCES</div>
+      <button class="nav-item" data-page="guide"><span class="nav-icon">?</span> Panduan & Referensi</button>
+      <div class="sidebar-footer">© 2026 Hanif Akhtar<br><a href="https://www.hanifakhtar.com" target="_blank" rel="noopener noreferrer">hanifakhtar.com</a></div>
+    </nav>
+    <main id="main" class="main" aria-live="polite"></main>
+  </div>
+  <nav class="mobile-tabs" aria-label="Navigasi cepat"><button data-page="home">⌂ Beranda</button><button data-page="sampling">≈ Sampling</button><button data-page="correlation">r Correlation</button><button data-page="ttest">t Test</button><button data-page="anova">F ANOVA</button><button id="allModulesButton">☷ Semua</button></nav>
+  <script src="assets/plotly.min.js"></script>
+  <script src="assets/math.js"></script>
+  <script src="assets/studentized-range.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
